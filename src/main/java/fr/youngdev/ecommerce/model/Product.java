@@ -15,9 +15,9 @@ import javax.validation.constraints.Min;
 public class Product {
     @GeneratedValue
     @Id
-    private long id;
+    private int id;
     @Length(min = 4,max = 20)
-    private String name;
+    private String nom;
     @Length(max = 255)
     private String description;
     @Min(0)
